@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+  <div>
+    <div class="header">
+      <div class="header-title"><%= htmlWebpackPlugin.options.title %></div>
+    </div>
+    <div class="left">
+      <!-- <div class="box">
+        <div class="box-header">
+          <div class="box-title">title</div>
+          <div class="box-content">content</div>
+        </div>
+      </div> -->
+      <div class="sm-panel" style="height: 180px;">
+        <div class="sm-panel-content">
+         <div class="sm-panel-heading">优质项目<span id="id-count" class="header-title"></span></div>
+          <div class="sm-panel-body verticemiddle">
+            <ul class="count-list">
+              <li class="count-item">
+                <div class="count-header">垃圾焚烧</div>
+                <div id="id-ljfs" class="count-content"></div>
+              </li>
+              <li class="count-item">
+                <div class="count-header">生物废弃物</div>
+                <div id="id-swfqw" class="count-content"></div>
+              </li>
+              <li class="count-item">
+                <div class="count-header">再生资源</div>
+                <div id="id-zszy" class="count-content"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div style="width: 100%;position: absolute;top: 180px;bottom: 0;">
+        <div class="sm-panel" style="height: 50%;">
+          <div class="sm-panel-content">
+           <div class="sm-panel-heading">城市覆盖<span id="id-cityOverNum" class="header-title"></span></div>
+            <div class="sm-panel-body">
+              <div id="id-cityCover" style="height: 100%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="sm-panel" style="height: 50%;">
+          <div class="sm-panel-content">
+           <div class="sm-panel-heading">处理规模</div>
+            <div class="sm-panel-body">
+              <ul class="count-list" style="height: 100%;">
+                <li class="count-item" style="width: 50%;height: 100%;">
+                  <div id="id-scaleList0" style="width: 100%;height: 100%;"></div>
+                </li>
+                <li class="count-item" style="width: 50%;height: 100%;">
+                  <div id="id-scaleList1" style="width: 100%;height: 100%;"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right" style="overflow: hidden;">
+      <div style="width: 50%;height: 100%;float: left;padding-right: 10px;box-sizing: border-box;">
+        <div class="sm-panel">
+          <div class="sm-panel-content">
+            <div id="id-kb-typeName1" class="sm-panel-heading">垃圾焚烧</div>
+            <div class="sm-panel-body">
+              <div class="kb-box">
+                <div class="kb-box-content">
+                  <div class="kb-box-cm kb-box-form-list">
+                    <div class="kb-box-form">
+                      <div class="kb-box-nav">
+                        <span class="kb-box-nav-text">项目数</span>
+                      </div>
+                      <div id="id-kb-count1" class="kb-box-text"></div>
+                    </div>
+                    <div class="kb-box-form">
+                      <div class="kb-box-nav">
+                        <span class="kb-box-nav-text">总投资</span>
+                      </div>
+                      <div id="id-kb-amount1" class="kb-box-text"></div>
+                    </div>
+                    <div class="kb-box-form">
+                      <div class="kb-box-nav">
+                        <span class="kb-box-nav-text">总处理规模(年)</span>
+                      </div>
+                      <div id="id-kb-scale1" class="kb-box-text"></div>
+                    </div>
+                    <div class="kb-box-form">
+                      <div class="kb-box-nav">
+                        <span class="kb-box-nav-text">发电量(年)</span>
+                      </div>
+                      <div id="id-kb-powerNumber1" class="kb-box-text"></div>
+                    </div>
+                  </div>
+                  <div id="id-kb-chart1" class="kb-box-cm kb-box-form-chart">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sm-panel">
+          <div class="sm-panel-content">
+            <div id="id-kb-typeName3" class="sm-panel-heading">生物废弃物</div>
+            <div class="sm-panel-body">
+              <div class="kb-box">
+                <div class="kb-box-content">
+                  <div class="kb-box-cm kb-box-form-list">
+                    <div class="kb-box-form">
+                      <div class="kb-box-nav">
+                        <span class="kb-box-nav-text">项目数</span>
+                      </div>
+                      <div id="id-kb-count3" class="kb-box-text"></div>
+                    </div>
+                    <div class="kb-box-form">
+                      <div class="kb-box-nav">
+                        <span class="kb-box-nav-text">总投资</span>
+                      </div>
+                      <div id="id-kb-amount3" class="kb-box-text"></div>
+                    </div>
+                    <div class="kb-box-form">
+                      <div class="kb-box-nav">
+                        <span class="kb-box-nav-text">总处理规模(年)</span>
+                      </div>
+                      <div id="id-kb-scale3" class="kb-box-text"></div>
+                    </div>
+                    <div class="kb-box-form">
+                      <div class="kb-box-nav">
+                        <span class="kb-box-nav-text">产油量(年)</span>
+                      </div>
+                      <div id="id-kb-powerNumber3" class="kb-box-text"></div>
+                    </div>
+                  </div>
+                  <div id="id-kb-chart3" class="kb-box-cm kb-box-form-chart"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sm-panel">
+          <div class="sm-panel-content">
+            <div id="id-kb-typeName5" class="sm-panel-heading">热电联产</div>
+            <div class="sm-panel-body">
+              <div class="kb-box">
+                <div class="kb-box-content">
+                  <div class="kb-box-cm kb-box-form-list">
+                    <div class="kb-box-form">
+                      <div class="kb-box-nav">
+                        <span class="kb-box-nav-text">项目数</span>
+                      </div>
+                      <div id="id-kb-count5" class="kb-box-text"></div>
+                    </div>
+                    <div class="kb-box-form">
+                      <div class="kb-box-nav">
+                        <span class="kb-box-nav-text">总投资</span>
+                      </div>
+                      <div id="id-kb-amount5" class="kb-box-text"></div>
+                    </div>
+                    <div class="kb-box-form">
+                      <div class="kb-box-nav">
+                        <span class="kb-box-nav-text">发电量(年)</span>
+                      </div>
+                      <div id="id-kb-scale5" class="kb-box-text"></div>
+                    </div>
+                    <div class="kb-box-form">
+                      <div class="kb-box-nav">
+                        <span class="kb-box-nav-text">发热量(年)</span>
+                      </div>
+                      <div id="id-kb-powerNumber5" class="kb-box-text"></div>
+                    </div>
+                  </div>
+                  <div id="id-kb-chart5" class="kb-box-cm kb-box-form-chart"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="width: 50%;height: 100%;float: left;padding-left: 10px;box-sizing: border-box;">
+        <div class="sm-panel">
+          <div class="sm-panel-content">
+            <div id="id-kb-typeName2" class="sm-panel-heading">收运一体化</div>
+            <div class="sm-panel-body">
+              <div class="kb-box">
+                <div class="kb-box-content">
+                  <div class="kb-box-cm kb-box-form-list">
+                    <div class="kb-box-form">
+                      <div class="kb-box-nav">
+                        <span class="kb-box-nav-text">项目数</span>
+                      </div>
+                      <div id="id-kb-count2" class="kb-box-text"></div>
+                    </div>
+                    <div class="kb-box-form">
+                      <div class="kb-box-nav">
+                        <span class="kb-box-nav-text">总投资</span>
+                      </div>
+                      <div id="id-kb-amount2" class="kb-box-text"></div>
+                    </div>
+                    <div class="kb-box-form">
+                      <div class="kb-box-nav">
+                        <span class="kb-box-nav-text">总处理规模(年)</span>
+                      </div>
+                      <div id="id-kb-scale2" class="kb-box-text"></div>
+                    </div>
+                    <div class="kb-box-form">
+                      <div class="kb-box-nav">
+                        <span class="kb-box-nav-text">车辆数</span>
+                      </div>
+                      <div id="id-kb-powerNumber2" class="kb-box-text"></div>
+                    </div>
+                  </div>
+                  <div id="id-kb-chart2" class="kb-box-cm kb-box-form-chart"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sm-panel">
+          <div class="sm-panel-content">
+            <div id="id-kb-typeName4" class="sm-panel-heading">再生资源</div>
+            <div class="sm-panel-body">
+              <div class="kb-box">
+                <div class="kb-box-content">
+                  <div class="kb-box-cm kb-box-form-list">
+                    <div class="kb-box-form">
+                      <div class="kb-box-nav">
+                        <span class="kb-box-nav-text">项目数</span>
+                      </div>
+                      <div id="id-kb-count4" class="kb-box-text"></div>
+                    </div>
+                    <div class="kb-box-form">
+                      <div class="kb-box-nav">
+                        <span class="kb-box-nav-text">总投资</span>
+                      </div>
+                      <div id="id-kb-amount4" class="kb-box-text"></div>
+                    </div>
+                    <div class="kb-box-form">
+                      <div class="kb-box-nav">
+                        <span class="kb-box-nav-text">总处理规模</span>
+                      </div>
+                      <div id="id-kb-scale4" class="kb-box-text"></div>
+                    </div>
+                    <div class="kb-box-form">
+                      <div class="kb-box-nav">
+                        <span class="kb-box-nav-text">减量化</span>
+                      </div>
+                      <div id="id-kb-powerNumber4" class="kb-box-text"></div>
+                    </div>
+                  </div>
+                  <div id="id-kb-chart4" class="kb-box-cm kb-box-form-chart"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sm-panel">
+          <div class="sm-panel-content">
+            <div id="id-kb-typeName6" class="sm-panel-heading">餐厨污泥</div>
+            <div class="sm-panel-body">
+              <div class="kb-box">
+                <div class="kb-box-content">
+                  <div class="kb-box-cm kb-box-form-list">
+                    <div class="kb-box-form">
+                      <div class="kb-box-nav">
+                        <span class="kb-box-nav-text">项目数</span>
+                      </div>
+                      <div id="id-kb-count6" class="kb-box-text"></div>
+                    </div>
+                    <div class="kb-box-form">
+                      <div class="kb-box-nav">
+                        <span class="kb-box-nav-text">总投资</span>
+                      </div>
+                      <div id="id-kb-amount6" class="kb-box-text"></div>
+                    </div>
+                    <div class="kb-box-form">
+                      <div class="kb-box-nav">
+                        <span class="kb-box-nav-text">总处理规模(年)</span>
+                      </div>
+                      <div id="id-kb-scale6" class="kb-box-text"></div>
+                    </div>
+                    <div class="kb-box-form">
+                      <div class="kb-box-nav">
+                        <span class="kb-box-nav-text">产油量(年)</span>
+                      </div>
+                      <div id="id-kb-powerNumber6" class="kb-box-text"></div>
+                    </div>
+                  </div>
+                  <div id="id-kb-chart6" class="kb-box-cm kb-box-form-chart"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="webgl-content"></div>
+  </div>
+</body>
+</html>

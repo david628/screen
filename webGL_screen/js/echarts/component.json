@@ -1,0 +1,6 @@
+{
+    "repos": "http://echarts.baidu.com/",
+    "version": "v3.2.2",
+    "name": "echarts",
+    "main": "echarts.js"
+}

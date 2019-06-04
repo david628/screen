@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background: -webkit-radial-gradient(#1a5970 0%, #000000 100%);
+  background: radial-gradient(#1a5970 0%, #000000 100%); */
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0px;
+  font-size: 0px;
+  clear: both;
+  visibility: hidden;
+}
+
+.cls-textBox {
+  text-align: center;
+  font-weight: normal;
+}
+.cls-textBox .cls-textBox-header {
+  font-size: 16px;
+  color: #D8F0F8;
+  padding: 20px 10px 0 10px;
+}
+.cls-textBox .cls-textBox-number {
+  font-size: 28px;
+  color: #fff;
+  padding: 8px 10px 10px 10px;
+}
+.cls-textBox-blue {
+  width: 240px;
+  height: 110px;
+  background: url('images/textBox_bg_blue.png') no-repeat;
+}
+.cls-textBox-red {
+  width: 240px;
+  height: 110px;
+  background: url('images/textBox_bg_red.png') no-repeat;
+}
+
+</style>
+</head>
+<body>
+  <div id="webgl-content"></div>
+  <div style="margin: 60px;border: 1px solid #FFD60E;">
+    
+    <div class="cls-textBox cls-textBox-blue" style="position: absolute;left: 30px;top: 100px;z-index: 10;">
+      <div class="cls-textBox-header">威胁情况总次数(当天)</div>
+      <div class="cls-textBox-number">999</div>
+    </div>
+    <div class="cls-textBox cls-textBox-red" style="position: absolute;left: 30px;top: 250px;z-index: 10;">
+      <div class="cls-textBox-header">攻击次数(当天)</div>
+      <div class="cls-textBox-number">20</div>
+    </div>
+
+  </div>
+  <!-- <script type="text/javascript" src="js/webGL/js/three.min.js"></script> -->
+  <!-- <script type="text/javascript" src="js/webGL/js/three57.min.js"></script> -->
+  <!-- <script type="text/javascript" src="js/webGL/js/three60.min.js"></script> -->
+  <script type="text/javascript" src="js/webGL/js/Three.js"></script>
+  <script type="text/javascript" src="js/webGL/js/THREEx.KeyboardState.js"></script>
+  <script type="text/javascript" src="js/webGL/js/THREEx.WindowResize.js"></script>
+  <!-- <script type="text/javascript" src="js/webGL/js/TrackballControls.js"></script> -->
+  <script type="text/javascript" src="js/webGL/js/tessalator3d.js"></script>
+  <script type="text/javascript" src="js/webGL/js/country_data.js"></script>
+  <script type="text/javascript" src="js/webGL/js/app_gh.js"></script>
+  <!-- <script type="text/javascript" src="DATA.js"></script> -->
+  <!-- <script type="text/javascript" src="js/webGL/js/effekseer.min.js"></script> -->
+  <!-- <script type="text/javascript" src="js/webGL/js/earth.js"></script> -->
+  <!-- <script type="text/javascript" src="js/webGL/js/earth__.js"></script> -->
+  <script type="text/javascript" src="data/_data.js"></script>
+  <script type="text/javascript" src="data/hotData.js"></script>
+  <script type="text/javascript" src="js/webGL/js/main.js"></script>
+
+
+  <script type="text/javascript" src="js/echarts/echarts.min.js"></script>
+  <script type="text/javascript" src="js/echarts/map/world.js"></script>
+  <!-- <script type="text/javascript" src="js/echarts/map/oceania.js"></script> -->
+  <script type="text/javascript" src="js/echarts/geoCoordMap.js"></script>
+  <script type="text/javascript">
+  </script>
+</body>
+</html>
