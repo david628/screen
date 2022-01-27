@@ -14,7 +14,7 @@
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
     "lodash": "4.17.10",
-    "three": "^0.92.0"
+    "three": "^0.137.0"
   },
   "devDependencies": {
     "babel-core": "6.26.3",
